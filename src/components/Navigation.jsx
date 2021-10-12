@@ -9,11 +9,12 @@ import {
 
 function Navigation() {
     const [search, setSearch] = useState('')
-    
+  
 
     function refreshPage() {
         window.location.reload(false);
       }
+
 
     return (
         <nav className="navbar">
@@ -23,9 +24,9 @@ function Navigation() {
             </div>
 
         <form>
-            <input type="text" value={search} onChange={e=> {setSearch(e.target.value)}} />
-            <Link to={`/search/songs/${search}`}>
-            <button type="submit">SEARCH</button> 
+            <input className="inputSearch" type="text" value={search} onChange={e=> {setSearch(e.target.value)}} />
+            <Link  to={`/search/songs/${search}`}>
+            <button className="buttonHide" type="submit">SEARCH</button> 
             </Link>
         </form>
         <ul className="navigation">

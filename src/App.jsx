@@ -3,6 +3,8 @@ import Home from './views/Home';
 import Navigation from './components/Navigation';
 import SearchSong from './views/SearchSong';
 import Player from './components/Player'
+import './App.css';
+import Footer from './components/footer';
 
 import {
   BrowserRouter as Router,
@@ -19,7 +21,6 @@ function App() {
     <Router>
     <div className="navigation">
       <Navigation />
-
     </div>
 
     <Switch>
@@ -30,17 +31,20 @@ function App() {
     <Route exact path="/search/songs/:search">
       <SearchSong />
     </Route>
-
-
-
     <Route exact path="/watch/:videoId">
               <Player/>
     </Route>
     </Context.Provider>
     
     </Switch>
+
+
+    <Footer />
   </Router>
+
+  
   )
+  
 }
 
 export default App

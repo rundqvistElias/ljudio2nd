@@ -1,0 +1,119 @@
+.videoWholeItem{
+    display:flex;
+    flex-direction: column;
+    background-color: #222;
+}
+
+
+.videoWrapper{
+    display:flex;
+    height:30vw;
+    justify-content: center;
+}
+
+.btnRow{
+    display: flex;
+    justify-content: center;
+}
+
+.videoListItem{
+    display:flex;
+    cursor: pointer;
+    font-family: "Roboto", sans-serif;
+    justify-content: block;
+    flex-direction: column;
+    
+}
+
+.listItem{
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.listItem>a{
+    text-decoration: none;
+    list-style-type: none;
+    color: black;
+    display: flex;
+    width: 50vw;
+    
+}
+
+.listItem>img{
+    display: flex;
+
+}
+
+.titleText{
+   display: flex;
+   text-align: center;
+}
+
+
+@media screen and (min-width: 1000px){
+    .homeSongs{
+        display: flex;
+        width: 100vw;
+        justify-content: space-around;
+        color:  #ea4f4c;
+        height:50vh;
+        flex-direction: row;
+        align-items: center;
+    }
+    
+    .homeSongs img{
+        width:300px;
+        height: 25vh;
+        border-radius: 50%;
+        box-shadow: #222;
+    }
+    
+    .homeArtists{
+        display: flex;
+        width: 100vw;
+        height:50vh;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+    
+    .homeArtists img{
+        width: 300px;
+        border-radius: 50%;
+        height: 25vh;
+        box-shadow: #222;
+    }
+
+    .artistDiv{
+        display: flex;
+        order:1;
+        margin-right: 120px;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .artistDiv p{
+        color: #ea4f4c;
+    }
+
+    .artistPic{
+        display: flex;
+    }
+
+    .songDiv{
+        display: flex;
+        margin-left: 120px;
+        flex-direction: column;
+        text-align: center;
+    }
+    .songDiv p{
+        color: white;
+    }
+    
+    .songPic{
+        display: flex;
+    }
+
+    
+}
