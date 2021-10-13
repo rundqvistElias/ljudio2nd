@@ -1,0 +1,44 @@
+.artistName{
+    height:20px;
+    text-align: center;
+}
+.artistWrapper{
+    overflow-y:scroll;
+    height: 80vh;
+    width: 105vw;
+    display: flex;
+    flex-direction: row;
+}
+
+.descriptionWrapper{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.artistDesc{
+    display: flex;
+    font-size: large;
+    width: 40vw;
+    
+    
+}
+.songListWrapper{
+    display: flex;
+    text-decoration: none;    
+}
+.songList{
+    display:flex;
+    flex-direction: column;
+    list-style-type: none;
+}
+.songList>li{
+    padding:10px;
+}
+
+.albumList{
+    display:flex;
+    width: 49vw;
+    flex-direction: column;
+    list-style-type: none;
+}
