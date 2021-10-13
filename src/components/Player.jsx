@@ -1,5 +1,5 @@
 import { Context } from "./context";
-import React, {useState, useRef, useContext} from 'react'
+import React, {useState, useContext, useEffect} from 'react'
 import ReactPlayer from 'react-player'
 import { useHistory, useParams } from 'react-router'
 import '../styles/video.css';
@@ -11,16 +11,29 @@ import SkipPreviousIcon from '@mui/icons-material/SkipPrevious';
 
 
 
-function Player() {
-    
-    const [ playState, setPlayState ] = useState(false);
-    const {songs} = useContext(Context)
-    const { videoId } = useParams('')
-    const history = useHistory()
-    const { content = [] } = songs
 
-    const handlePlay = (event) => {
+function Player(song) {
+
+
+    const [ playState, setPlayState ] = useState(false);
+
+    const {songs} = useContext(Context)
+
+    const { videoId } = useParams('')
+
+    const history = useHistory()
+
+    const { content = [] } = songs
+    
+
+
+    
+    
+
+    const handlePlay = () => {
         setPlayState(prevCheck => !prevCheck);
+        
+ 
     };
     
     
@@ -41,7 +54,9 @@ function Player() {
         }
       }
   }
-  
+
+
+
 
 
 return (
@@ -55,12 +70,14 @@ return (
                 height="100%"
                  />
         </div>
-        <div className="btnRow">
+    <div className="btnRow">
             <IconButton style={{backgroundColor: '#ea4f4c', color: '#FFFFFF'}}  onClick={handlePrev}><SkipPreviousIcon/></IconButton>
             <IconButton style={{backgroundColor: '#ea4f4c', color: '#FFFFFF'}}  onClick={handlePlay}>PLAY</IconButton>
             <IconButton style={{backgroundColor: '#ea4f4c', color: '#FFFFFF'}}  onClick={handleNext}><SkipNextIcon/></IconButton>
-        </div>
     </div>
+
+    </div>
+
     )
 }
 

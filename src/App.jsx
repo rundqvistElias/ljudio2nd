@@ -1,16 +1,16 @@
 import React, { useState } from 'react'
 import Home from './views/Home';
 import Navigation from './components/Navigation';
-import SearchSong from './views/SearchSong';
+import Search from './views/Search';
 import Player from './components/Player'
 import './App.css';
 import Footer from './components/footer';
+import Artist from './components/artist';
 
 import {
   BrowserRouter as Router,
   Switch,
-  Route,
-  Link
+  Route
 } from "react-router-dom";
 import { Context } from './components/context';
 
@@ -22,17 +22,19 @@ function App() {
     <div className="navigation">
       <Navigation />
     </div>
-
     <Switch>
       <Route exact path="/">
         <Home/>
       </Route>
     <Context.Provider value={{songs, setSongs}}>
     <Route exact path="/search/songs/:search">
-      <SearchSong />
+      <Search />
     </Route>
     <Route exact path="/watch/:videoId">
-              <Player/>
+      <Player/>
+    </Route>
+    <Route exact path="/artist/:browseId">
+      <Artist />
     </Route>
     </Context.Provider>
     

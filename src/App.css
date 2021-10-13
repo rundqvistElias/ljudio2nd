@@ -3,7 +3,7 @@ html{
     font-family: "Roboto", sans-serif;
     font-size: 20px;
     font-weight: 200;
-    position: relative;
+    position: fixed;
     margin-right: 0;
 }
 

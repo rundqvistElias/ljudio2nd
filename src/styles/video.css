@@ -1,3 +1,15 @@
+.homeWrapper{
+    overflow-y:scroll;
+    height: 80vh;
+    width: 105vw;
+}
+
+.videoListWrapper{
+    overflow-y:scroll;
+    height: 80vh;
+    width: 105vw;
+}
+
 .videoWholeItem{
     display:flex;
     flex-direction: column;
@@ -14,6 +26,10 @@
 .btnRow{
     display: flex;
     justify-content: center;
+}
+
+.artistInfo{
+    color:white;
 }
 
 .videoListItem{
@@ -49,6 +65,101 @@
    display: flex;
    text-align: center;
 }
+
+@media screen and (max-width: 1000px){
+
+    .homeSongs{
+        display: flex;
+        width: 100vw;
+        color:  #ea4f4c;
+        height:50vh;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        font-weight: bold;
+    }
+    
+    .homeSongs img{
+        width:300px;
+        height: 25vh;
+        border-radius: 50%;
+        box-shadow: #222;
+    }
+    
+    .homeArtists{
+        display: flex;
+        width: 100vw;
+        height:50vh;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        font-weight: bold;
+    }
+    
+    .homeArtists img{
+        width: 300px;
+        border-radius: 50%;
+        height: 25vh;
+        box-shadow: #222;
+       
+    }
+    .songDiv p{
+        display: none;
+    }
+
+    .artistDiv p{
+        display: none;
+    }
+    
+
+}
+
+
+@media screen and (max-width: 600px){
+    .homeSongs{
+        display: flex;
+        width: 100vw;
+        justify-content: center;
+        color:  #ea4f4c;
+        height:50vh;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .homeSongs img{
+        width:300px;
+        height: 25vh;
+        border-radius: 50%;
+        box-shadow: #222;
+    }
+    
+    .homeArtists{
+        display: flex;
+        width: 100vw;
+        height:50vh;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .homeArtists img{
+        width: 300px;
+        border-radius: 50%;
+        height: 25vh;
+        box-shadow: #222;
+    }
+    
+    .songDiv p{
+        display: none;
+    }
+    
+    .artistDiv p{
+        display: none;
+    }
+    
+    
+    }
+    
 
 
 @media screen and (min-width: 1000px){
@@ -91,10 +202,12 @@
         margin-right: 120px;
         flex-direction: column;
         text-align: center;
+        font-weight: bold;
     }
 
     .artistDiv p{
         color: #ea4f4c;
+        font-weight: bold;
     }
 
     .artistPic{
@@ -106,9 +219,11 @@
         margin-left: 120px;
         flex-direction: column;
         text-align: center;
+        font-weight: bold;
     }
     .songDiv p{
-        color: white;
+      color: black;
+      font-weight: bold;
     }
     
     .songPic{
@@ -117,3 +232,5 @@
 
     
 }
+
+

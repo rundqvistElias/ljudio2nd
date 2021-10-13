@@ -5,7 +5,7 @@ import ArtistLogo from '../assets/artistlogo.jpg'
 function Home() {
     return (
     <div className="homeHeader">
-            <div className="homeWrapper">
+        <div className="homeWrapper">
         <div className="homeSongs">
          <div className="songDiv">
             Songs
