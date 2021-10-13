@@ -8,11 +8,13 @@
     width: 105vw;
     display: flex;
     flex-direction: row;
+    margin-left: 9vw;
 }
 
 .descriptionWrapper{
     display: flex;
     flex-direction: column;
+    text-align: center;
 
 }
 
@@ -26,6 +28,7 @@
 .songListWrapper{
     display: flex;
     text-decoration: none;    
+    text-align: center;
 }
 .songList{
     display:flex;
@@ -38,9 +41,11 @@
 
 .albumList{
     display:flex;
-    width: 49vw;
+    width: 20vw;
     flex-direction: column;
     list-style-type: none;
+    text-align: center;
+    margin-right: 5vw;
 }
 
 .wholePage{

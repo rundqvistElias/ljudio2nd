@@ -30,10 +30,10 @@ function Navigation() {
             </Link>
         </form>
         <ul className="navigation">
-                <Router>
-                <li className="parent" onClick={refreshPage}><Link to="/" className="routeHome">Home</Link></li>
-                <Route exact path="/"/>
-                </Router>
+            <Router>
+            <li className="parent" onClick={refreshPage}><Link to="/" className="routeHome">Home</Link></li>
+            <Route exact path="/"/>
+            </Router>
             </ul>
         </nav>  
     )
