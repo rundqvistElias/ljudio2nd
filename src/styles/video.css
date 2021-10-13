@@ -27,6 +27,11 @@
     display: flex;
     justify-content: center;
 }
+.shareRow{
+    display:flex;
+    justify-content: center;
+    padding:5px;
+}
 
 .artistInfo{
     color:white;
@@ -39,6 +44,9 @@
     justify-content: block;
     flex-direction: column;
     
+}
+.artistLink>a{
+    color: black;
 }
 
 .listItem{

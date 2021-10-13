@@ -37,7 +37,7 @@ function Search(){
             </div>
             </Link>
             
-            <div className="artistInformation">
+            <div className="artistLink">
 
             <Link to={`/artist/${song.artist.browseId}`}>
             {song.artist.name}

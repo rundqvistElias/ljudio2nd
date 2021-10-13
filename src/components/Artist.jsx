@@ -2,6 +2,9 @@ import React, {useEffect, useState} from 'react'
 import { useParams } from 'react-router-dom'
 import axios from 'axios';
 import '../styles/artist.css'
+import IconButton from '@mui/material/Button';
+import ShareIcon from '@mui/icons-material/Share';
+
 
 function Artist() {
 
@@ -33,10 +36,14 @@ useEffect(()=>{
         })
 },{browseId})
 
+    const copyLinkUrl = () => {
+    navigator.clipboard.writeText(window.location.href)
+  }
+
     return (
-    <div>
+    <div className="wholePage">
     <h1 className="artistName">
-    {content.name}
+    {content.name} <IconButton style={{backgroundColor: '#ea4f4c', color: '#FFFFFF', marginBottom: '7px'}}  onClick={copyLinkUrl}><ShareIcon/></IconButton>
     </h1>
         <div className="artistWrapper"> 
         <div className="descriptionWrapper"> 

@@ -6,6 +6,8 @@ import '../styles/video.css';
 import IconButton from '@mui/material/Button';
 import SkipNextIcon from '@mui/icons-material/SkipNext';
 import SkipPreviousIcon from '@mui/icons-material/SkipPrevious';
+import ShareIcon from '@mui/icons-material/Share';
+
 
 
 
@@ -54,7 +56,10 @@ function Player(song) {
         }
       }
   }
-
+  
+  const copyLinkUrl = () => {
+    navigator.clipboard.writeText(window.location.href)
+  }
 
 
 
@@ -75,7 +80,11 @@ return (
             <IconButton style={{backgroundColor: '#ea4f4c', color: '#FFFFFF'}}  onClick={handlePlay}>PLAY</IconButton>
             <IconButton style={{backgroundColor: '#ea4f4c', color: '#FFFFFF'}}  onClick={handleNext}><SkipNextIcon/></IconButton>
     </div>
+    <div className="shareRow">
 
+    <IconButton style={{backgroundColor: '#ea4f4c', color: '#FFFFFF', marginBottom: '7px'}}  onClick={copyLinkUrl}><ShareIcon/></IconButton>
+ 
+    </div>
     </div>
 
     )
