@@ -19,12 +19,6 @@ const [songs, setSongs] = useState([])
 const [albums, setAlbums] = useState([])
 
 
-console.log(browseId);
-console.log(content);
-console.log(images);
-console.log(songs);
-console.log(albums);
-
 useEffect(()=>{
     axios
     .get(`https://yt-music-api.herokuapp.com/api/yt/artist/${browseId}`)
